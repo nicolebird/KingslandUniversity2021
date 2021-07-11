@@ -1,0 +1,1 @@
+//Write a JS program that modifies a number until the average value of all its digits is higher than 5.

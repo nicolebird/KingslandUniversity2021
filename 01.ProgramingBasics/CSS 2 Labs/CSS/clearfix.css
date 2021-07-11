@@ -1,0 +1,7 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+<!--never add anything to the clearfix.  its bad practice--!>

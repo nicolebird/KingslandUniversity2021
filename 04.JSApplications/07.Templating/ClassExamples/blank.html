@@ -1,0 +1,58 @@
+<!DOCTYPEhtml>
+<head>
+    <metacharset="UTF-8">
+    <title>Hello Ms. Midnightmoet</title>
+    <!--IncludeHandlebarsdistribution-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- const Handlebars = require("handlebars");
+       const template = Handlebars.compile("Name: {{name}}");
+       console.log(template({ name: "Nils" }));</script> -->
+</head>
+<body>
+    <div id="app"></div>
+    <div id="someFunction"></div>
+    <script>
+        let template=Handlebars.compile('<h1>Hello {{name}} {{favTime}}</h1>');
+        //console.log("The HBS returns a function");
+        let container=document.getElementById('app');
+        //container.innerHTML=template({name:'Ms. Midnightmoet', favTime: 'Nighttime'});
+        let template1=Handlebars.compile('<h1>Hello {{name}} {{favTime}}</h1>');
+        //console.log("The HBS returns a function");
+            let container1=document.createElement('p');
+        //container1.innerHTML=template1({name:'Harry', favColor: 'Yellow'});
+        container.append(container1);
+        
+        function returnHTML(someObject){
+            return (`<h1>${someObject}</h1>`)
+        }
+    //1someFunction = 
+    </script>
+        <article>
+            <div id= "contact-template">
+                Name:{{name}}   Phone:{{phone}}  Email:{{email}}
+            </div>
+        </article>
+    <script> 
+        let src = document.getElementById("contact-template").innerText;
+        let template2 = Handlebars.compile(src);
+        let context = {name:'Ivan Ivanov', phone:'088-812-3456', email:'i.ivanov@gmail.com'};
+        let html = template2(context);
+        container.append(html);
+    </script>
+
+    <script id="contact-template"
+        type="text/x-handlebars-template">
+    <article>
+        <div class="title">
+            {{name}}
+            <button>&#8505;</button>
+        </div>
+        <div class="info">
+            <span>&phone; {{phone}}</span> 
+            <span>&#9993; {{email}}</span>
+        </div> 
+    </article>
+    </script>
+
+    </body>
+    </html>

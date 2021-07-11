@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
+.wantedTitle {
+	letter-spacing: 5px;
+	font-size: 12rem;
+	margin-bottom: auto;
+	margin-left: 10px;
+	margin-top: auto;
+}
+.deadTitle {
+	font-size: 6rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.jamieTitle {
+	font-size: 6rem;
+	margin-bottom: 0px;
+}
+.notoriousTitle {
+	margin-top: 0px;
+}
+.rewardTitle {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 6rem;
+}
+.marshallTitle {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+img {
+	width: 25rem;
+	height: 40rem;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+h1 {
+	font-size: 6rem;
+}
+h2 {
+	font-size: 3rem;
+}

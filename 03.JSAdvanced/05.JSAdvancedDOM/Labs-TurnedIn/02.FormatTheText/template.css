@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    color: indigo;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 24px;
+}
+
+h4 {
+    margin: 3% auto;
+    padding: 11px;
+    text-align: center;
+    width: 75%;
+}
+
+#textParagraph {
+    border: 1px solid black;
+    margin: 3% auto;
+    padding: 1rem;
+    width: 70%;
+}
+
+input[type="button"], button {
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin: 1rem 0px;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    text-transform: uppercase;
+}
+
+#output p, #input {
+    border-bottom: 1px solid lightgrey;
+    padding: 1%;
+    word-wrap: break-word;
+}

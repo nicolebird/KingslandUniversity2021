@@ -1,0 +1,20 @@
+{{!-- monkey-template.  Include script tags if used in HTML OR add let variable = 'add the template here' if adding it into the JS. --}}
+<script type="text/x-handlebars-template" id="monkey-template">
+  <!-- /* Write your template here for the id monkey-template */ -->
+  <div class="monkeys">
+    {{#each monkeys}}
+      {{> monkeyCard}}
+    {{/each}}
+  </div>
+</script>
+
+{{!--monkeyCard template.  Include script tags if used in HTML OR add let variable = 'add the template here' if adding it into the JS.  --}}
+<script type="text/x-handlebars-template" id="monkeyCard">
+  <!-- Write your template for the id monkeyCard -->
+  <div class="monkey">
+    <h2>{{name}}</h2>
+    <img src="{{image}}">
+    <button class="infoButton">More Info</button>
+    <p style="display: none" id="{{id}}">{{info}}</p>
+  </div>
+</script>

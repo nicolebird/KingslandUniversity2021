@@ -1,0 +1,11 @@
+<!--examples when using fonts on your own computer--!>
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Source Serif Pro;
+    src: url(font/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
+}
