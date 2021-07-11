@@ -1,5 +1,16 @@
-//GitHub personal access token: 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
+const loadAllBooksBtn = document.getElementById("loadBooks");
+loadAllBooksBtn.addEventListener("click", loadBooks);
 
+async function loadBooks() {
+    await fetch("https://kingslandcreateabook-default-rtdb.firebaseio.com/.json", {
+        method: "GET",
+    })
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
+
+//------------------------------Another option---------------------------------------------------
 // import { fetchData } from './fetch.js';
 
 // const htmlElements = {
@@ -108,15 +119,3 @@
 
 //     return tr;
 // }
-
-const loadAllBooksBtn = document.getElementById("loadBooks");
-loadAllBooksBtn.addEventListener("click", loadBooks);
-
-async function loadBooks() {
-    await fetch("https://kingslandcreateabook-default-rtdb.firebaseio.com/.json", {
-        method: "GET",
-    })
-    .then(response => response.json())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-}
